@@ -1,0 +1,30 @@
+---
+name: Bug report
+about: Create a report to help us improve
+title: 제목은 [버그]으로 시작할 것
+labels: 버그
+assignees: ''
+
+---
+
+**버그 설명**
+설명
+
+**버그 재현**
+다음과 같은 방식으로 버그를 재현할 수 있음
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
+
+**목표 기능**
+설명
+
+**에러 코드**
+파일 / 라인
+
+**에러 메세지**
+터미널의 에러 메세지 붙여넣기
+
+**기타 사항**
+선택
