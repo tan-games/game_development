@@ -1,6 +1,7 @@
 import pygame
 
 import entity
+from font import text_1
 
 pygame.init()
 
@@ -36,6 +37,8 @@ def uad():
     모든 update와 display는 해당 함수를 통해서만 이루어 져야 함
     """
     entity.window.fill((255, 255, 255))
+
+    entity.window.blit(text_1.text, text_1.rect)
 
     pygame.display.update()
 
