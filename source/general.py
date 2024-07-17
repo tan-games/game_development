@@ -48,4 +48,3 @@ def uad():
     entity.player.update()
 
     pygame.display.update()
-

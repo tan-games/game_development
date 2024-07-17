@@ -51,4 +51,3 @@ class BackgroundSystem:
 background_system = BackgroundSystem()
 for i in range(1, 13):
     background_system.add_background(Background(i))
-
