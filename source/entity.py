@@ -4,3 +4,5 @@ import pygame
 WINDOW_WIDTH = 1200
 WINDOW_HEIGHT = 800
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+# 음식 개발 완료 함
