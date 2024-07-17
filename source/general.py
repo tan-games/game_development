@@ -2,6 +2,7 @@ import pygame
 
 import entity
 from font import text_1
+from background import background_system
 
 pygame.init()
 
@@ -36,7 +37,9 @@ def uad():
     update and display의 약자로, 모든 엔티티 들을 update 하고 화면에 display 하기 위한 함수
     모든 update와 display는 해당 함수를 통해서만 이루어 져야 함
     """
-    entity.window.fill((255, 255, 255))
+    # background update
+    background_system.draw(entity.window)
+    background_system.update()
 
     entity.window.blit(text_1.text, text_1.rect)
 
