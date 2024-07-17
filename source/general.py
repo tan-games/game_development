@@ -40,5 +40,9 @@ def uad():
 
     entity.window.blit(text_1.text, text_1.rect)
 
+    # player
+    entity.window.blit(entity.player.image, entity.player.rect)
+    entity.player.update()
+
     pygame.display.update()
 
