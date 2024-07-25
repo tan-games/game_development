@@ -17,7 +17,7 @@ class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
         self.images: dict[str, pygame.Surface] = {
-            'noraml': pygame.image.load("../resource/player.png"),
+            'normal': pygame.image.load("../resource/player.png"),
             'rotated': pygame.image.load("../resource/player_rotated.png")
         }
         self.image = self.images['normal']
