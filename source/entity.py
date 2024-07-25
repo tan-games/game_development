@@ -38,5 +38,8 @@ class Player(pygame.sprite.Sprite):
         if keys[pygame.K_d] and (self.rect.bottom == WINDOW_HEIGHT):
             self.vel -= 35
 
+    def increase_speed(self, amount):
+        self.vel += amount
+
 
 player = Player()

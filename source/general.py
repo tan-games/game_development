@@ -28,7 +28,7 @@ def event_checker():
             global running
             running = False
         if event.type == Time.timer_1:
-            pass
+            entity.player.increse_speed(0.05)
 
 
 def uad():
