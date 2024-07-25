@@ -45,7 +45,19 @@ class BackgroundSystem:
 
     @staticmethod
     def adjust_vel(vel):
+        """
+        배경의 속도를 변화시키는 메서드
+        :param vel: 설정할 속도 값
+        """
         Background.adjust_vel(vel)
+
+    @staticmethod
+    def get_vel():
+        """
+        배경 속도를 출력하는 메서드
+        :return: 배경 속도
+        """
+        return Background.vel
 
 
 background_system = BackgroundSystem()
