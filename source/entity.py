@@ -16,9 +16,11 @@ class Rock(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.normal_image = pygame.image.load("../resource/player.png")
-        self.rotated_image = pygame.image.load("../resource/player_rotated.png")
-        self.image = self.normal_image
+        self.images: dict[str, pygame.Surface] = {
+            'noraml': pygame.image.load("../resource/player.png"),
+            'rotated': pygame.image.load("../resource/player_rotated.png")
+        }
+        self.image = self.images['normal']
         self.rect = self.image.get_rect()
         self.health = 3
         self.vel = 0
@@ -35,9 +37,9 @@ class Player(pygame.sprite.Sprite):
 
         keys = pygame.key.get_pressed()
         if keys[pygame.K_s]:
-            self.image = self.rotated_image
+            self.image = self.images['rotated']
         else:
-            self.image = self.normal_image
+            self.image = self.images['normal']
 
         if keys[pygame.K_d] and (self.rect.bottom == WINDOW_HEIGHT):
             self.vel -= 35
