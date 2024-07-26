@@ -39,9 +39,13 @@ class Player(pygame.sprite.Sprite):
             self.vel -= 35
 
 class Icicle(pygame.sprite.Sprite):
-    def __init__(self):
+    def __init__(self, size):
         super().__init__()
-        self.image = pygame.imgge.load("../resource/items/icicle/200.png")
+        self.image.size(0, 1)
+        if self.image.size = 0:
+            self.image = self.image.load("../resource/items/icicle/200.png")
+        if self.image.size = 1:
+            self.image = self.image.load("../resource/items/icicle/400.png")
         self.rect = self.image.get_rect()
 
 player = Player()
