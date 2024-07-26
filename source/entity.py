@@ -41,7 +41,7 @@ class Player(pygame.sprite.Sprite):
 class Icicle(pygame.sprite.Sprite):
     def __init__(self, size):
         super().__init__()
-        self.image.size(0, 1)
+        self.image.size(0, 1)11
         if self.image.size = 0:
             self.image = self.image.load("../resource/items/icicle/200.png")
         if self.image.size = 1:
