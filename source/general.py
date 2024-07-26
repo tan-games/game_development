@@ -29,7 +29,9 @@ def event_checker():
             global running
             running = False
         if event.type == Time.timer_1:
-            pass
+            new_vel = background_system.get_vel() + 0.05
+            background_system.adjust_vel(new_vel)
+
 
 
 def uad():
