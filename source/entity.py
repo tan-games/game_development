@@ -38,5 +38,10 @@ class Player(pygame.sprite.Sprite):
         if keys[pygame.K_d] and (self.rect.bottom == WINDOW_HEIGHT):
             self.vel -= 35
 
+class Icicle(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+        self.image = pygame.imgge.load("../resource/items/icicle/200.png")
+        self.rect = self.image.get_rect()
 
 player = Player()
