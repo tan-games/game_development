@@ -1,5 +1,7 @@
 import pygame
 
+import random
+
 # window setting
 WINDOW_WIDTH = 1200
 WINDOW_HEIGHT = 800
@@ -44,6 +46,15 @@ class Player(pygame.sprite.Sprite):
         if keys[pygame.K_d] and (self.rect.bottom == WINDOW_HEIGHT):
             self.vel -= 35
 
+class Icicle(pygame.sprite.Sprite):
+    def __init__(self, size):
+        super().__init__()
+        self.size = random.choice([0, 1])
+        if self.size == 0:
+            self.image = self.image.load("../resource/items/icicle/200.png")
+        if self.size == 1:
+            self.image = self.image.load("../resource/items/icicle/400.png")
+        self.rect = self.image.get_rect()
 
 player = Player()
 
